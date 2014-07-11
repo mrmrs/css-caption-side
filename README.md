@@ -23,19 +23,19 @@ or download the css on github and include in your project.
 .csb { caption-side: bottom; }
 .csi { caption-side: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .cst-ns { caption-side: top; }
   .csb-ns { caption-side: bottom; }
   .csi-ns { caption-side: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .cst-m { caption-side: top; }
   .csb-m { caption-side: bottom; }
   .csi-m { caption-side: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .cst-l { caption-side: top; }
   .csb-l { caption-side: bottom; }
   .csi-l { caption-side: inherit; }
