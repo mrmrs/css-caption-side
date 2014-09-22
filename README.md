@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-caption-side)
 ## File Size
 
 571B caption-side.css
-447B caption-side.min.css
+447B caption-side.min.css 
+160B minified and gzipped
 
 ## The Code
 ```
