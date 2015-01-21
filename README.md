@@ -20,7 +20,7 @@ View on [npm](https://www.npmjs.org/package/css-caption-side)
 ## File Size
 
 571B caption-side.css
-447B caption-side.min.css 
+447B caption-side.min.css
 160B minified and gzipped
 
 ## The Code
@@ -58,7 +58,7 @@ View on [npm](https://www.npmjs.org/package/css-caption-side)
 
 The MIT License (MIT)
 
-Copyright (c) 2014 @mrmrs
+Copyright (c) 2015 @mrmrs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
