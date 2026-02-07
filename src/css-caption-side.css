@@ -7,9 +7,9 @@
 .csi { caption-side: inherit; }
 
 @media screen and (min-width: 48em) {
-  .cst-ns { caption-side: top; }
-  .csb-ns { caption-side: bottom; }
-  .csi-ns { caption-side: inherit; }
+  .cst-s { caption-side: top; }
+  .csb-s { caption-side: bottom; }
+  .csi-s { caption-side: inherit; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
