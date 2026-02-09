@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-caption-side.css');
+const srcFile = path.join(__dirname, 'src', 'caption-side.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-caption-side.css',
+  filename: 'caption-side.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-caption-side.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'caption-side.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-caption-side.css',
+  filename: 'caption-side.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-caption-side.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'caption-side.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-caption-side.css     ${unminified.length} bytes`);
-console.log(`  dist/css-caption-side.min.css ${minified.length} bytes`);
+console.log(`  dist/caption-side.css     ${unminified.length} bytes`);
+console.log(`  dist/caption-side.min.css ${minified.length} bytes`);
