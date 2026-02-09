@@ -1,38 +1,44 @@
 {
   "name": "css-caption-side",
-  "style": "caption-side.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-caption-side",
-  "description": "Css module of single purpose classes for caption side",
+  "version": "2.0.0",
+  "description": "Functional CSS for caption-side",
+  "style": "dist/caption-side.css",
+  "main": "dist/caption-side.css",
+  "exports": {
+    ".": "./dist/caption-side.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "caption-side"
+    "caption-side",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-caption-side": {
+  "homepage": "https://github.com/mrmrs/css-caption-side",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-caption-side.git"
+    "url": "https://github.com/mrmrs/css-caption-side.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-caption-side/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-caption-side/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
