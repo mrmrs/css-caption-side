@@ -6,19 +6,19 @@
 .csb { caption-side: bottom; }
 .csi { caption-side: inherit; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .cst-s { caption-side: top; }
   .csb-s { caption-side: bottom; }
   .csi-s { caption-side: inherit; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .cst-m { caption-side: top; }
   .csb-m { caption-side: bottom; }
   .csi-m { caption-side: inherit; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .cst-l { caption-side: top; }
   .csb-l { caption-side: bottom; }
   .csi-l { caption-side: inherit; }
